@@ -57,3 +57,41 @@ div {
   margin: 0 5px 5px 0;
   background-color: burlywood;
 }
+@media only screen and (max-width: 320px) {
+  #content-blocks {
+    
+    justify-content: space-between;
+  }
+  div {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  #banner-image{
+    height: 100px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 650px) {
+  section#content-blocks{
+    flex-direction: row;
+  }
+  div {
+    width: 48%;
+  }
+  #banner-image{
+    height: 100px;
+}
+}
+@media only screen and (min-width: 651px) {
+  section#content-blocks{
+    flex-direction: row;
+  }
+  div{
+    width: 20%;
+  }
+ 
+}
+ul{
+  justify-content: center;
+  align-items: center;
+}
+
